@@ -1,6 +1,8 @@
 # expression-language-scaffold
 
-Repo containing code for basic expression language. Can be used a GitHub template for developing expression languages.
+Repo containing code for basic expression language. Can be used a GitHub template for developing expression languages. This language will simply publish and get objects from IPFS.
+
+The UI for this language is built using Svelte.
 
 # Prerequisites
 
