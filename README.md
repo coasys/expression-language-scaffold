@@ -18,6 +18,12 @@ npm i
 npm run test
 ```
 
+# Hosting UI for dev
+
+```
+npm run host-ui
+```
+
 # Building UI
 
 ```

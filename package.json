@@ -4,7 +4,8 @@
   "description": "A basic example of an AD4M expression language using IPFS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ad4m-test --test ./expression.test.js --bundle build/bundle.js --meta '{\"name\":\"expression-language-scaffold\",\"description\":\"A basic example of an AD4M expression language using IPFS\",\"sourceCodeLink\":\"https://github.com/perspect3vism/expression-language-scaffold\",\"possibleTemplateParams\":[\"uid\",\"name\"]}'",
+    "host-ui": "ad4m-test --hostui --bundle build/bundle.js --meta '{\"name\":\"expression-language-scaffold\",\"description\":\"A basic example of an AD4M expression language using IPFS\",\"sourceCodeLink\":\"https://github.com/perspect3vism/expression-language-scaffold\",\"possibleTemplateParams\":[\"uid\",\"name\"]}'",
     "build-icons": "rollup -c rollup.config.icons.js",
     "build": "npm run build-icons && tsc && rollup -c",
     "dev": "tsc && rollup -c rollup.config.icons.js && rollup -c -w"
@@ -13,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@perspect3vism/ad4m": "0.1.29",
+    "@perspect3vism/ad4m-test": "^0.0.6",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^4.0.0",
